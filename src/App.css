@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Reem Kufi", sans-serif !important;
+  font-family: 'Ubuntu', sans-serif;
   scroll-behavior: smooth;
 
 }
@@ -10,6 +11,54 @@ a {text-decoration: none;}
 img {
   max-width: 100%;
   height: auto;
+}
+.logotype4 {
+    position: relative;
+    color: #337AB7;
+    letter-spacing: 3px;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 80%;
+    font-variant: small-caps;
+    transition: color 0.3s ease-in-out;
+    text-shadow: 1px 1px #fffcf5, 1px 1px;
+    margin-bottom: 20px;
+}
+.logotype4 b {
+    font-variant: normal;
+}
+.logotype4 div {
+    position: absolute;
+    font-size: 24px;
+    text-shadow: 1px 1px #fffcf5;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 0;
+    left: 0;
+    white-space: nowrap;
+    transform: translateX(0);
+}
+.logotype4:hover {
+    color: #2d6b9f;
+}
+.logotype4:hover div {
+    left: 100%;
+    transform: translateX(-100%);
+}
+@media (max-width:600px) {
+    .logotype4, .logotype4:hover {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .logotype4 b {
+        font-size: 32px;
+    }
+    .logotype4 div {
+        font-size: 18px;
+    }
+}
+.nav-link a{
+  color: black;
+  font-size: 20px;
 }
 .App {
   min-height: 100vh;
@@ -257,19 +306,19 @@ nav {
 .testimonial-section-bottom {
   margin: 2rem auto;
 }
-.testimonial-section-bottom p {
+.info-boxes-img-container p {
   font-weight: 700;
   color: #515151;
   max-width: 500px;
   font-size: 1.1rem;
   margin: 2rem 0rem;
 }
-.testimonials-stars-container svg {
+.Stars {
   margin: 0rem 0.25rem;
   font-size: 1.5rem;
   color: #fe9e0d;
 }
-.testimonial-section-bottom h2 {
+.info-boxes-img-container h2 {
   margin-top: 1.5rem;
 }
 .work-section-wrapper {

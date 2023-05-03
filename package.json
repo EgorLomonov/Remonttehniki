@@ -2,7 +2,6 @@
   "name": "landing-page-tutorial",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://EgorLomonov.github.io/Remonttehniki",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.10.5",
@@ -19,8 +18,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

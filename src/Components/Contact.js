@@ -16,10 +16,13 @@ const Contact = () => {
         e.target.reset()
   }
   return (
-    <section id="id6">
+    <section id="id4">
     <div className="contact-page-wrapper">
       <h1 className="primary-heading">Оставьте свои контакты</h1>
       <h1 className="primary-heading">и мы свяжемся с вами</h1>
+      <p className="primary-text">
+        Позвоните или напишите сейчас! Я всегда на связи. Гарантирую – останетесь довольны!
+        </p>
      
         <form ref={form} onSubmit={sendEmail}>
         <div className="contact-form-container">
