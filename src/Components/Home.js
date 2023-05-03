@@ -15,16 +15,15 @@ const Home = () => {
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
-            Ремонт бытовой техники на дому, в городе Челябинск
+            Выездной ремонт техники на дому
           </h1>
           <p className="primary-text">
-            Наша компания занимается ремонтом бытовой техники на дому. 
+            Мы занимаемся ремонтом бытовой техники на дому. 
             <p>Обратившись к нам вы получаете:</p>
             <p> Высококачественных специалистов;</p>
             <p> Быструю и качественную помощь; </p>
-            <p>  Выгодные условия оплаты.</p>
           </p>
-          <a className="goToContact" href="#id6">
+          <a className="goToContact" href="#id4">
           <button className="secondary-button">
             Контакты компании <FiArrowRight />{" "}
           </button>

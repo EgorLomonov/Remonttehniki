@@ -1,9 +1,9 @@
 import React from "react";
-import PickMeals from "../Assets/pick-meals-image.png";
-import ChooseMeals from "../Assets/choose-image.png";
-import DeliveryMeals from "../Assets/delivery-image.png";
 import NoPrePay from "../Assets/Noprepay.png";
 import Sell from "../Assets/Skid.png";
+import ChooseMeals from "../Assets/choose-image.png";
+import DeliveryMeals from "../Assets/delivery-image.png";
+import PickMeals from "../Assets/pick-meals-image.png";
 const Work = () => {
   const workInfoData = [
     {
@@ -38,11 +38,11 @@ const Work = () => {
     },
   ];
   return (
-    <section id="id4">
+    <section id="id5">
     <div className="work-section-wrapper">
       <div className="work-section-top">
-        <p className="primary-subheading">Наши услуги</p>
-        <h1 className="primary-heading">Услуги компании</h1>
+        <p className="primary-subheading">Предоставляемы услуги</p>
+        <h1 className="primary-heading">Наши преимущества</h1>
         <p className="primary-text">
         Мы признаем, что бытовая техника является важной частью домашней жизни, поэтому мы делаем все возможное, чтобы наши клиенты получили быстрый и качественный ремонт. Обращайтесь к нам в любое время, и мы поможем вам вернуться к обычной жизни быстро и без лишних затрат.
         </p>

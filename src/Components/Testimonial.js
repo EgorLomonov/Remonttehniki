@@ -1,22 +1,65 @@
 import React from "react";
-import ProfilePic from "../Assets/john-doe-image.png";
 import { AiFillStar } from "react-icons/ai";
 
 const Testimonial = () => {
+  const rewievsData = [
+    {
+
+      title: "Василевский И.Ф",
+      text: " Выражаю огромную благодарность Алексею за его пунктуальность, профессионализм при ремонте моей стиральной машинки и человеческие качества при общении с клиентом!",
+    },
+    {
+      title: "Иванов И.И",
+      text: "Огромное спасибо мастеру за прекрасную работу, отремонтировал нашу любимую стиральную машинку, всё сделал грамотно и быстро, вернул к жизни нашу (старушку) .",
+    },
+    {
+    
+      title: "Кручинина Е.А",
+      text: "Мастер быстро обнаружил причину неисправности и произвел замену деталей.",
+    },
+    {
+  
+      title: "Кузьменко В.Ю",
+      text: "Оперативно, проффесионально определил проблему, заменил запчасти в стиральной машинке ( перестал крутиться барабан) .  Спасибо .",
+    },
+  ];
   return (
-    <section id="id5">
+    <section id="id3">
+      <div className="work-section-wrapper">
+      <div className="work-section-top">
+      
+        <h1 className="primary-heading">Отзывы</h1>
+      
+      </div>
+      <div className="work-section-bottom">
+        {rewievsData.map((data) => (
+          <div className="work-section-info" key={data.title}>
+             <p className="Stars">
+            <AiFillStar />
+          <AiFillStar />
+          <AiFillStar />
+          <AiFillStar />
+          <AiFillStar />
+          </p>
+            <div className="info-boxes-img-container">
+              <img src={data.image} alt="" />
+            </div>
+            <h2>{data.title}</h2>
+            <p>{data.text}</p>
+           
+          </div>
+        ))}
+      </div>
+    </div>
+    {/* 
     <div className="work-section-wrapper">
       <div className="work-section-top">
-        <p className="primary-subheading">Наши мастера</p>
-
-        <p className="primary-text">
-        Позвоните или напишите сейчас! Я всегда на связи. Гарантирую – останетесь довольны!
-        </p>
+      <div className="work-section-bottom">
       </div>
-      <div className="testimonial-section-bottom">
-        <img src={ProfilePic} alt="" />
+      <h1>Отзывы</h1>
+      <div className="work-section-info">
         <p>
-        Здравствуйте - я  Даниил - сертифицированный мастер по ремонту стиральных машин, холодильников, посудомоечных машин в городе Челябинске. Быстрый и аккуратный ремонт за 1,5-3 ч. Работаю с гарантией, БЕЗ ПОСРЕДНИКОВ!
+        Выражаю огромную благодарность Алексею за его пунктуальность, профессионализм при ремонте моей стиральной машинки и человеческие качества при общении с клиентом!
         </p>
         <div className="testimonials-stars-container">
           <AiFillStar />
@@ -25,9 +68,26 @@ const Testimonial = () => {
           <AiFillStar />
           <AiFillStar />
         </div>
-        <h2>Богомазов  Даниил Сегеевич</h2>
+        <h2>Бабаева Валентина Анатольевна</h2>
       </div>
     </div>
+   
+    <div className="work-section-info">
+        <p>
+        Огромное спасибо мастеру за прекрасную работу, отремонтировал нашу любимую стиральную машинку, всё сделал грамотно и быстро, вернул к жизни нашу (старушку) . Побольше бы таких, грамотных, вежливых специалистов которые знают свою работу, просто Золотые руки у мастера. Спасибо!
+        </p>
+        <div className="testimonials-stars-container">
+          <AiFillStar />
+          <AiFillStar />
+          <AiFillStar />
+          <AiFillStar />
+          <AiFillStar />
+        </div>
+        <h2>Ломонов Егор Владимирович</h2>
+      </div>
+      </div>
+              */
+}
     </section>
   );
 };
